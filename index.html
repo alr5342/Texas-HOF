@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>p5.js setup() & draw()</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+    <script>
+        function setup() {
+            createCanvas(windowWidth, windowHeight);
+            noStroke();
+            fill(50, 150, 255, 200);
+            background(20);
+        }
+
+        function draw() {
+            // translucent background to leave a trail
+            background(20, 20, 30, 100);
+            const s = 50 + 30 * sin(frameCount * 0.05);
+            ellipse(mouseX || width / 2, mouseY || height / 2, s, s);
+        }
+
+        function windowResized() {
+            resizeCanvas(windowWidth, windowHeight);
+        }
+    </script>
+</body>
+</html>
