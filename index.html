@@ -4,17 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Longhorn Hall of Fame</title>
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header class="site-header">
     <h1>Longhorn Hall of Fame</h1>
-    <p class="subtitle">Click “Start” to enter. Then use “Next” to move through the timeline.</p>
+    <p class="subtitle">Click “Start” to enter. Then use the arrow to move through the hall.</p>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="hero-card">
       <h2 class="hero-title">Enter the Hall</h2>
       <p class="hero-text">
@@ -29,127 +28,122 @@
     </div>
   </section>
 
-  <main class="timeline hidden" id="timeline">
+  <main class="hall hidden" id="hall">
+    <div class="timeline" id="timeline">
+      <section class="moment locked" id="m1">
+        <div class="moment-inner">
+          <div class="moment-media">
+            <img src="Images/placeholder-1942.png" alt="1942 Rose Bowl victory">
+          </div>
+          <div class="moment-content">
+            <h2>1942: Rose Bowl Win</h2>
+            <p>
+              One of the earliest national-stage moments: Texas wins the Rose Bowl, planting the flag as a major program.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <section class="moment locked" id="m1">
-      <div class="moment-inner">
-        <div class="moment-media">
-          <img src="Images/placeholder-1942.png" alt="1942 Rose Bowl victory">
+      <section class="moment locked" id="m2">
+        <div class="moment-inner">
+          <div class="moment-media">
+            <img src="Images/placeholder-1963.png" alt="1963 Texas national championship">
+          </div>
+          <div class="moment-content">
+            <h2>1963: National Champions</h2>
+            <p>
+              An undefeated season that defined an era and made Texas a national standard.
+            </p>
+          </div>
         </div>
-        <div class="moment-content">
-          <h2>1942: Rose Bowl Win</h2>
-          <p>
-            One of the earliest national-stage moments: Texas wins the Rose Bowl, planting the flag as a major program.
-          </p>
-          <button class="next" data-next="m2">Next →</button>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="moment locked" id="m2">
-      <div class="moment-inner">
-        <div class="moment-media">
-          <img src="Images/placeholder-1963.png" alt="1963 Texas national championship">
+      <section class="moment locked" id="m3">
+        <div class="moment-inner">
+          <div class="moment-media">
+            <img src="Images/placeholder-1969.png" alt="1969 Game of the Century season">
+          </div>
+          <div class="moment-content">
+            <h2>1969: “Game of the Century” Season</h2>
+            <p>
+              Another undefeated run and a season remembered as an all-time classic—Texas is on top again.
+            </p>
+          </div>
         </div>
-        <div class="moment-content">
-          <h2>1963: National Champions</h2>
-          <p>
-            An undefeated season that defined an era and made Texas a national standard.
-          </p>
-          <button class="next" data-next="m3">Next →</button>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="moment locked" id="m3">
-      <div class="moment-inner">
-        <div class="moment-media">
-          <img src="Images/placeholder-1969.png" alt="1969 Game of the Century season">
+      <section class="moment locked" id="m4">
+        <div class="moment-inner">
+          <div class="moment-media">
+            <img src="Images/placeholder-1970.png" alt="1970 Texas national championship">
+          </div>
+          <div class="moment-content">
+            <h2>1970: Another National Title</h2>
+            <p>
+              Proof the peak wasn’t a fluke: Texas closes out the Royal era’s dominance with another championship.
+            </p>
+          </div>
         </div>
-        <div class="moment-content">
-          <h2>1969: “Game of the Century” Season</h2>
-          <p>
-            Another undefeated run and a season remembered as an all-time classic—Texas is on top again.
-          </p>
-          <button class="next" data-next="m4">Next →</button>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="moment locked" id="m4">
-      <div class="moment-inner">
-        <div class="moment-media">
-          <img src="Images/placeholder-1970.png" alt="1970 Texas national championship">
+      <section class="moment locked" id="m5">
+        <div class="moment-inner">
+          <div class="moment-media">
+            <img src="Images/placeholder-1977.png" alt="Earl Campbell Heisman Trophy">
+          </div>
+          <div class="moment-content">
+            <h2>1977: Earl Campbell Wins the Heisman</h2>
+            <p>
+              A legendary individual peak: the “Tyler Rose” becomes Texas’ first Heisman Trophy winner.
+            </p>
+          </div>
         </div>
-        <div class="moment-content">
-          <h2>1970: Another National Title</h2>
-          <p>
-            Proof the peak wasn’t a fluke: Texas closes out the Royal era’s dominance with another championship.
-          </p>
-          <button class="next" data-next="m5">Next →</button>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="moment locked" id="m5">
-      <div class="moment-inner">
-        <div class="moment-media">
-          <img src="Images/placeholder-1977.png" alt="Earl Campbell Heisman Trophy">
+      <section class="moment locked" id="m6">
+        <div class="moment-inner">
+          <div class="moment-media">
+            <img src="Images/placeholder-1996.png" alt="1996 Big 12 championship">
+          </div>
+          <div class="moment-content">
+            <h2>1996: Big 12 Champions</h2>
+            <p>
+              A new conference, a new statement: Texas wins the Big 12 and kicks off a new era of national relevance.
+            </p>
+          </div>
         </div>
-        <div class="moment-content">
-          <h2>1977: Earl Campbell Wins the Heisman</h2>
-          <p>
-            A legendary individual peak: the “Tyler Rose” becomes Texas’ first Heisman Trophy winner.
-          </p>
-          <button class="next" data-next="m6">Next →</button>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="moment locked" id="m6">
-      <div class="moment-inner">
-        <div class="moment-media">
-          <img src="Images/placeholder-1996.png" alt="1996 Big 12 championship">
+      <section class="moment locked" id="m7">
+        <div class="moment-inner">
+          <div class="moment-media">
+            <img src="Images/placeholder-1998.png" alt="Ricky Williams Heisman Trophy">
+          </div>
+          <div class="moment-content">
+            <h2>1998: Ricky Williams Wins the Heisman</h2>
+            <p>
+              Another program-defining icon: a second Heisman winner and one of the most famous moments in Longhorn history.
+            </p>
+          </div>
         </div>
-        <div class="moment-content">
-          <h2>1996: Big 12 Champions</h2>
-          <p>
-            A new conference, a new statement: Texas wins the Big 12 and kicks off a new era of national relevance.
-          </p>
-          <button class="next" data-next="m7">Next →</button>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="moment locked" id="m7">
-      <div class="moment-inner">
-        <div class="moment-media">
-          <img src="Images/placeholder-1998.png" alt="Ricky Williams Heisman Trophy">
+      <section class="moment locked" id="m8">
+        <div class="moment-inner">
+          <div class="moment-media">
+            <img src="Images/placeholder-2005.png" alt="2005 Texas national championship">
+          </div>
+          <div class="moment-content">
+            <h2>2005: National Champions</h2>
+            <p>
+              The modern signature moment: a title season capped by one of the most famous championship games ever.
+            </p>
+          </div>
         </div>
-        <div class="moment-content">
-          <h2>1998: Ricky Williams Wins the Heisman</h2>
-          <p>
-            Another program-defining icon: a second Heisman winner and one of the most famous moments in Longhorn history.
-          </p>
-          <button class="next" data-next="m8">Next →</button>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section class="moment locked" id="m8">
-      <div class="moment-inner">
-        <div class="moment-media">
-          <img src="Images/placeholder-2005.png" alt="2005 Texas national championship">
-        </div>
-        <div class="moment-content">
-          <h2>2005: National Champions</h2>
-          <p>
-            The modern signature moment: a title season capped by one of the most famous championship games ever.
-          </p>
-        </div>
-      </div>
-    </section>
-
+    <button class="nav-arrow hidden" id="nextArrow" aria-label="Next moment">→</button>
   </main>
 
   <script src="story.js"></script>
